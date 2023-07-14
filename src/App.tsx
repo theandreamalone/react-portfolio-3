@@ -9,7 +9,7 @@ import Testimonial from "../src/components/Testimonial";
 //import ImageView from "../src/components/popup/ImageView";
 import { Fragment, useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
-import "../styles/globals.css";
+import "/assets/css/style.css";
 import { malone } from "./utils";
 
 const Index = () => {
