@@ -9,7 +9,6 @@ import Testimonial from "../src/components/Testimonial";
 //import ImageView from "../src/components/popup/ImageView";
 import { Fragment, useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
-import "/assets/css/style.css";
 import { malone } from "./utils";
 
 const Index = () => {
@@ -19,8 +18,7 @@ const Index = () => {
   }, []);
 }
 
-import reactLogo from './assets/react.svg'
-import './App.css'
+
 
 function App() {
   const [count, setCount] = useState(0);
