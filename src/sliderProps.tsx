@@ -8,6 +8,7 @@ import SwiperCore, {
   Pagination,
   Virtual,
 } from "swiper";
+
 SwiperCore.use([
   Mousewheel,
   Pagination,
