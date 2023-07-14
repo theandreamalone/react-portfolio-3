@@ -2,10 +2,10 @@ const Home = () => {
   return (
     <section id="home" className="home-section">
       <div className="effect-1">
-        <img src="./assets/img/effect-1.svg" className="svg" alt="image" />
+        <img src="/assets/img/effect-1.svg" className="svg" alt="image" />
       </div>
       <div className="effect-2">
-        <img src="./assets/img/effect-2.svg" className="svg" alt="image" />
+        <img src="/assets/img/effect-2.svg" className="svg" alt="image" />
       </div>
       <div className="container">
         <div className="row min-vh-100 align-items-center">
@@ -17,8 +17,8 @@ const Home = () => {
               <h1>
                 Hi! I'm Andrea,<br />
               </h1>
-              <p style={{fontSize: 32, color:"black"}}>your new favorite developer with<br/>
-                lots of design, SEO, and conversion experience.</p>
+              <p style={{fontSize: 32, color:"black"}}>your friendly web developer with<br/>
+                deep design, SEO, and conversion experience.</p>
               <p>
                 My design and development services lean on 11 years of 
                 successfully managing websites and conversion optimization
