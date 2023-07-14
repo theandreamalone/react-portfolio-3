@@ -252,6 +252,9 @@ Primary use:    pxdraft
     right: 0px;
   }
 }
+
+/*footer
+--------------*/
 .footer {
   border-top: 2px solid #18171C;
   padding-top: 10px;
@@ -268,6 +271,8 @@ Primary use:    pxdraft
   margin-left: 18px;
 }
 
+/*button
+-------------*/
 .px-btn {
   padding: 12px 28px;
   border: 2px solid transparent;
@@ -297,7 +302,7 @@ Primary use:    pxdraft
   border-color: #18171C;
   color: #fff;
 }
-
+/*??*/
 .bg-gray {
   background: rgba(247, 175, 36, 0.1);
 }
