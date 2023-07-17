@@ -8,8 +8,9 @@ import Skill from "../src/components/Skill";
 import Testimonial from "../src/components/Testimonial";
 //import ImageView from "../src/components/popup/ImageView";
 import { Fragment, useEffect, useState } from "react";
-import Preloader from "./components/Preloader";
+import Preloader from "../src/components/Preloader";
 import { malone } from "./utils";
+//import styles from "../public/assets/css/style.css";
 
 const Index = () => {
   useEffect(() => {

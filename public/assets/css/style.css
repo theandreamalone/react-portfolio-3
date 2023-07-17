@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*------------------------------------------------------------------
-Project:    Weasley Personal Portfolio
+Project:    Portfolio | Andrea Malone
 Version:    1.0
-Primary use:    pxdraft
+Primary use:    
 
 [Table of contents]
 
@@ -252,9 +252,31 @@ Primary use:    pxdraft
     right: 0px;
   }
 }
-
-/*footer
---------------*/
+@media (max-width: 991px) {
+  .main-header .navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 4px 9px;
+    outline: none;
+    box-shadow: none;
+  }
+  .main-header .navbar-toggler span {
+    width: 25px;
+    height: 2px;
+    background: #18171c;
+    margin: 4px 0;
+  }
+  .main-header .navbar-collapse {
+    border-bottom: 2px solid #18171c;
+    border-top: 2px solid #18171c;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background: #fff;
+    right: 0px;
+  }
+}
 .footer {
   border-top: 2px solid #18171C;
   padding-top: 10px;
@@ -271,8 +293,6 @@ Primary use:    pxdraft
   margin-left: 18px;
 }
 
-/*button
--------------*/
 .px-btn {
   padding: 12px 28px;
   border: 2px solid transparent;
@@ -302,7 +322,7 @@ Primary use:    pxdraft
   border-color: #18171C;
   color: #fff;
 }
-/*??*/
+
 .bg-gray {
   background: rgba(247, 175, 36, 0.1);
 }
