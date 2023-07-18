@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { sliderProps } from "../../src/sliderProps";
+import 'swiper/css';
+import { sliderProps } from "../sliderProps";
 import SectionTitle from "./SectionTitle";
 const testimonialData = [
   {

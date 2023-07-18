@@ -184,7 +184,7 @@ const Contact = () => {
               ))}
             </ul>
             <div className="text-center pt-5">
-              <img src="assets/img/contact.svg" className="svg" alt="image" />
+              <img src="assets/svg/contact.svg" className="svg" alt="image" />
             </div>
           </div>
         </div>

@@ -118,14 +118,14 @@ const Skill = () => {
             <div className="experience-user">
               <span className="eu-1">
                 <img
-                  src="./assets/img/effect-3.svg"
+                  src="./assets/svg/effect-3.svg"
                   className="svg"
                   alt="image"
                 />
               </span>
               <span className="eu-2">
                 <img
-                  src="./assets/img/effect-4.svg"
+                  src="./assets/svg/effect-4.svg"
                   className="svg"
                   alt="image"
                 />
