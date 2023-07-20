@@ -52,6 +52,7 @@ const portfolioData = [
 
 const Portfolio = () => {
   return (
+  <>
     <section id="work" className="section work-section bg-gray">
       <div className="container">
         <SectionTitle heading={"Latest Projects"} subHeading={"Portfolio"} text={""} />
@@ -77,6 +78,19 @@ const Portfolio = () => {
         </div>
       </div>
     </section>
+    <section id="call-to-action" className="">
+      <div className="col-lg-12 callout-section">
+            <div className="experience-user avatar-box">
+            <div className="avatar">
+            <img src="./assets/img/headshot.png" alt="image" />
+            </div>
+            <a className="px-btn px-btn-theme2" href="#contactus">
+              Hire me{" "}
+            </a>
+            </div>
+          </div>
+    </section>
+    </>
   );
 };
 export default Portfolio;

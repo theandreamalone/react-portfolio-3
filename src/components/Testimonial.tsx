@@ -74,6 +74,15 @@ const Testimonial = () => {
           <div className="owl-dots"></div>
         </Swiper>
       </div>
+      <div className="">
+              <span className="testimonial-section effect-4">
+                <img
+                  src="./assets/svg/kindwords.svg"
+                  className="svg"
+                  alt="image"
+                />
+              </span>
+      </div>
     </section>
   );
 };

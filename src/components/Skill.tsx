@@ -65,22 +65,16 @@ const Skill = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="col-lg-12 experience-title-box">
-              <SectionTitle
+            <div className="col-lg-12">
+              <div className="experience-title-box">
+                <SectionTitle
                 heading={"Experience and Skills"}
                 subHeading={"Experience"}
                 text={
                   "My design and development services lean on 11 years of successfully managing websites and conversion optimization for organizations big and small"
                 }
-              />
-            </div>
-            <div className="experience-user col-lg-12 avatar-box">
-              <div className="avatar">
-                <img src="./assets/img/a-malone.jpg" alt="image" />
+                />
               </div>
-              <a className="px-btn px-btn-theme2" href="#contactus">
-                  Hire me{" "}
-              </a>
             </div>
             <div className="experience-box">
               <h3>My Experience</h3>
@@ -118,7 +112,7 @@ const Skill = () => {
             <div className="experience-user">
               <span className="eu-1">
                 <img
-                  src="./assets/svg/effect-3.svg"
+                  src="./assets/svg/eyes.svg"
                   className="svg"
                   alt="image"
                 />
@@ -132,7 +126,6 @@ const Skill = () => {
               </span>
             </div>
           </div>
-
         </div>
       </div>
     </section>

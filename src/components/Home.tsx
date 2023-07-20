@@ -5,6 +5,9 @@ const Home = () => {
         <img src="/assets/svg/effect-1.svg" className="svg" alt="image" />
       </div>
       <div className="effect-2">
+        <img src="/assets/svg/effect-3.svg" className="svg" alt="image" />
+      </div>
+      <div className="effect-3">
         <img src="/assets/svg/effect-2.svg" className="svg" alt="image" />
       </div>
       <div className="container">
@@ -28,8 +31,6 @@ const Home = () => {
                 <a className="px-btn px-btn-theme" href="#contactus">
                   Let’s Talk
                 </a>
-              </div>
-              <div className="btn-bar">
                 <a className="px-btn px-btn-theme" href="#services">
                   Learn More About Me
                 </a>
@@ -38,7 +39,7 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <div className="home-image">
-              <img src="/assets/img/home-banner.jpg" alt="image" />
+              <img src="/assets/img/headshot.png" alt="image" />
             </div>
           </div>
         </div>

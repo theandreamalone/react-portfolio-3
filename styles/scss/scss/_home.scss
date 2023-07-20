@@ -3,20 +3,36 @@
 .home-section {
     position: relative;
   }
-  .home-section .effect-1 {
+  .effect-1 {
     position: absolute;
     top: 25%;
     left: 2%;
+    max-width: 50px;
+    width: 100%;
   }
   @media (max-width: 767px) {
     .home-section .effect-1 {
       display: none;
     }
   }
-  .home-section .effect-2 {
+  .effect-2 {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     right: 2%;
+    max-width: 150px;
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    .home-section .effect-2 {
+      display: none;
+    }
+  }
+  .effect-3 {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    max-width: 100px;
+    width: 100%;
   }
   @media (max-width: 767px) {
     .home-section .effect-2 {
@@ -49,12 +65,14 @@
   }
   .home-section .home-intro h6 span {
     display: inline-block;
-    border: 1px solid #5c64cf;
+    border: 2px solid $px-dark;
+    border-radius: 0px;
     padding: 8px 20px;
-    color: #5c64cf;
+    color: $px-dark;
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
   }
+
   @media (max-width: 767px) {
     .home-section .home-intro h6 span {
       -webkit-transform: rotate(0);

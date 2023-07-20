@@ -7,8 +7,7 @@ const Header = () => {
         <div className="container">
           {/* Brand */}
           <a className="navbar-brand" href="#">
-            <img src="./assets/img/favicon.png" className="png" alt="image" width="66px"/>
-            Andrea Malone
+            <img src="./assets/svg/logo.svg" className="png" alt="Andrea Malone" width="150px"/>
           </a>
           {/* / */}
           <Accordion>
@@ -32,7 +31,7 @@ const Header = () => {
               <ul className="navbar-nav mx-auto">
                 <li>
                   <a className="nav-link active" href="#home">
-                    <span>Home</span>
+                    <span>Welcome</span>
                   </a>
                 </li>
                 <li>
@@ -52,7 +51,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a className="nav-link" href="#contactus">
-                    <span>Contact</span>
+                    <span>Contact Me</span>
                   </a>
                 </li>
               </ul>

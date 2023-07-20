@@ -169,21 +169,22 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="col-lg-5 ms-auto col-xl-4 pt-5 pt-lg-0">
+          <div className="col-lg-5 ms-auto pt-5 pt-lg-0">
             <ul className="contact-infos">
               {contactInfo.map((contact) => (
                 <li key={contact.id}>
-                  <div className="icon">
-                    {/* <i className={contact.icon} /> add back if you add this data back to contactInfo */}
-                  </div>
-                  <div className="col">
+                  {/* <div className="icon">
+                    <i className={contact.icon} /> add back if you add this data back to contactInfo 
+                  </div>*/}
+                  {/*<p><div className="col">
                     <h5>{contact.label}</h5>
-                    {/*<p>{contact.value}</p> add back if you add this data back to contactInfo */}
-                  </div>
+                    {contact.value}</p> add back if you add this data back to contactInfo 
+                  </div>*/}
                 </li>
               ))}
             </ul>
             <div className="text-center pt-5">
+              <img src="assets/svg/effect-2.svg" className="svg" alt="image" />
               <img src="assets/svg/contact.svg" className="svg" alt="image" />
             </div>
           </div>

@@ -1,54 +1,48 @@
 .section-heading {
-    padding-bottom: 45px;
+  padding-bottom: 45px;
+  h6 {
+      margin: 0 0 20px -10px;
+      @include down-md {
+          margin-left: 0;
+      }
+      span {
+          display: inline-block;
+          border: 2px solid $px-dark;
+          border-radius: 0px;
+          padding: 8px 20px;
+          color: $px-dark;
+          transform: rotate(-15deg);
+      }
   }
-  .section-heading h6 {
-    margin: 0 0 20px -10px;
+  h3 {
+      font-size: 55px;
+      margin: 0;
+      color: $px-dark;
+      @include down-md {
+          font-size: 45px;
+      }
+      @include down-sm {
+          font-size: 40px;
+      }
+      span {
+          position: relative;
+          display: inline;
+          vertical-align: top;
+          padding-bottom: 15px;
+          &:after {
+              content: "";
+              background-image: url(../../../assets/svg/title.svg);
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 92px;
+              height: 14px;
+              background-repeat: no-repeat;
+          }
+      }
   }
-  @media (max-width: 991px) {
-    .section-heading h6 {
-      margin-left: 0;
-    }
+  p {
+      margin: 15px 0 0;
+      font-size: 18px;
   }
-  .section-heading h6 span {
-    display: inline-block;
-    border: 1px solid #5c64cf;
-    padding: 8px 20px;
-    color: #5c64cf;
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-  }
-  .section-heading h3 {
-    font-size: 55px;
-    margin: 0;
-    color: #18171c;
-  }
-  @media (max-width: 991px) {
-    .section-heading h3 {
-      font-size: 45px;
-    }
-  }
-  @media (max-width: 767px) {
-    .section-heading h3 {
-      font-size: 40px;
-    }
-  }
-  .section-heading h3 span {
-    position: relative;
-    display: inline;
-    vertical-align: top;
-    padding-bottom: 15px;
-  }
-  .section-heading h3 span:after {
-    content: "";
-    background-image: url(../../../public/assets/svg/title.svg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 92px;
-    height: 14px;
-    background-repeat: no-repeat;
-  }
-  .section-heading p {
-    margin: 15px 0 0;
-    font-size: 18px;
-  }
+}

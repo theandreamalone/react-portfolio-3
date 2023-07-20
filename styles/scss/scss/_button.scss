@@ -1,6 +1,8 @@
 .px-btn {
 	padding: 12px 28px;
+	margin: 0 25px;
 	border: 2px solid transparent;
+	border-radius: 25px;
 	font-size: 16px;
 	line-height: 1.5;
 	text-decoration: none;
@@ -12,17 +14,17 @@
 		border-color: $px-theme;
 		color: $px-white;
 		&:hover {
-			background: $px-dark;
-			border-color: $px-dark;
+			background: $px-hover;
+			border-color: $px-hover;
 		}
 	}
 	&.px-btn-theme2 {
 		background: $px-theme2;
-		border-color: $px-dark;
+		border-color: $px-theme2;
 		color: $px-dark;
 		&:hover {
-			background: $px-dark;
-			border-color: $px-dark;
+			background: $px-hover;
+			border-color: $px-hover;
 			color: $px-white;
 		}
 	}

@@ -27,6 +27,7 @@ Primary use:
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../vendor/bootstrap/css/bootstrap.min.css";
 
 // 4. Include any default map overrides here
 
@@ -34,8 +35,8 @@ Primary use:
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
-@import "../../vendor/bootstrap/css/bootstrap.min.css";
-@import "../../vendor/bootstrap/icons/bootstrap-icons.css";
+@import "../../../vendor/bootstrap/css/bootstrap.min.css";
+@import "../../../vendor/bootstrap/icons/bootstrap-icons.css";
 
 // Need?
 @import "scss/variable";
@@ -45,10 +46,14 @@ Primary use:
 @import "scss/button";
 @import "scss/color";
 @import "scss/style";
+@import "scss/home";
+@import "scss/loading";
+@import "scss/portfolio";
+@import "scss/section-heading";
 
-@import "../../vendor/owl-carousel/css/owl.carousel.min.css";
-@import "../../vendor/magnific/magnific-popup.css";
-@import "../../vendor/font-awesome/css/all.min.css";
+@import "../../../vendor/owl-carousel/css/owl.carousel.min.css";
+@import "../../../vendor/magnific/magnific-popup.css";
+@import "../../../vendor/font-awesome/css/all.min.css";
 //
 
 // 6. Optionally include any other parts as needed

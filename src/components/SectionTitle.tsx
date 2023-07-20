@@ -9,7 +9,7 @@ const SectionTitle = (props: SectionTitleProps) => {
 
   return (
     <div className="row section-heading">
-      <div className="col-lg-6">
+      <div className="text-center">
         <h6>
           <span>{subHeading}</span>
         </h6>

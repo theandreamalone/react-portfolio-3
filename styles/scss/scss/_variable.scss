@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-$px-theme:			#5C64CF !default;
-$px-theme2:			#F7AF24 !default;
+$px-theme:			#e95b1a !default;
+$px-theme2:			#fee200 !default;
 
 $px-dark:			#18171C !default;
+$px-hover:			#02ac64 !default;
 
 $px-white:			#fff !default;
 $px-black:			#000 !default;
@@ -14,6 +15,7 @@ $px-gray:			rgba($px-theme2, .10) !default;
 $px-font-size:		15px !default;
 $px-line-height:	1.7 !default;
 $px-font:			'Rubik', sans-serif !default;
+$px-font-blue:      #0077ba !default;
 
 
 $px-shadow:			0 .375rem 1.5rem 0 rgba(140,152,164,.125) !default;
