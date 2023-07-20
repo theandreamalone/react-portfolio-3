@@ -1663,19 +1663,6 @@ main {
   font-size: 14px;
 }
 
-.effect-4 {
-  position: absolute;
-  bottom: 20%;
-  right: 2%;
-  max-width: 150px;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .effect-4 {
-    display: none;
-  }
-}
 .section-heading {
   padding-bottom: 45px;
 }
