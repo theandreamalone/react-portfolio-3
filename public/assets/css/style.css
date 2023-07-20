@@ -745,6 +745,12 @@ Primary use:
   background: rgba(254, 226, 0, 0.1);
 }
 
+.background-pattern {
+  background-image: url(/assets/svg/contact.svg);
+  background-repeat: repeat-x;
+  z-index: 4;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: inherit;
@@ -1031,7 +1037,7 @@ main {
   }
 }
 
-/* feature 
+/* feature / services
 ---------------------*/
 .feature-box-01 {
   padding: 40px;
@@ -1130,8 +1136,8 @@ main {
   height: 50px;
   align-items: center;
   justify-content: center;
-  background: #e95b1a;
-  color: #fff;
+  background: #fee200;
+  color: #18171C;
   font-size: 30px;
   display: flex;
   border-radius: 50%;
@@ -1272,6 +1278,8 @@ main {
   right: 20px;
 }
 
+/* testimonial section
+---------------------*/
 .feature-box-03 {
   border: 2px solid #18171C;
   box-shadow: 0 0 0 0 #18171C;
@@ -1319,6 +1327,21 @@ main {
   font-size: 14px;
 }
 
+/* contact section 
+-----------------*/
+.effect-6 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .effect-4 {
+    display: none;
+  }
+}
 .contact-form {
   border: 2px solid #18171C;
   padding: 35px;
@@ -1597,8 +1620,8 @@ main {
 .portfolio-box .portfolio-info a {
   width: 40px;
   height: 40px;
-  background: #5c64cf;
-  color: #fff;
+  background: #fee200;
+  color: #18171C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1610,59 +1633,19 @@ main {
   right: 20px;
 }
 
-.feature-box-03 {
-  border: 2px solid #18171c;
-  box-shadow: 0 0 0 0 #18171c;
-  transition: ease all 0.35s;
-  padding: 40px 35px;
-  margin-bottom: 35px;
-}
-
-.feature-box-03:hover {
-  box-shadow: 3px 3px 0 0 #18171c;
-}
-
-.feature-box-03 .feature-img {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.feature-box-03 .feature-content {
-  text-align: center;
-  position: relative;
-  padding: 30px 0 0;
-}
-
-.feature-box-03 .feature-content .icons {
-  width: 35px;
-  height: 35px;
+.effect-5 {
   position: absolute;
-  top: -20px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background: #f7af24;
-  color: #18171c;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 13px;
+  bottom: 5%;
+  left: 2%;
+  max-width: 200px;
+  width: 100%;
 }
 
-.feature-box-03 .feature-content h6, .feature-box-03 .feature-content .h6 {
-  font-weight: 600;
-  color: #18171c;
-  margin: 0;
+@media (max-width: 767px) {
+  .effect-5 {
+    display: none;
+  }
 }
-
-.feature-box-03 .feature-content span {
-  font-size: 14px;
-}
-
 .section-heading {
   padding-bottom: 45px;
 }

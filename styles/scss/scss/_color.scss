@@ -1,3 +1,10 @@
 .bg-gray {
 	background: $px-gray;
 }
+
+.background-pattern {
+background-image: url(/assets/svg/contact.svg);
+background-repeat: repeat-x;
+z-index: 4;
+}
+

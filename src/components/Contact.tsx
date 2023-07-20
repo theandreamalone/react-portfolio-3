@@ -74,7 +74,7 @@ const Contact = () => {
           text={""}
         />
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-12">
             <div className="contact-form">
               <h6>Get in touch</h6>
               <p className="lead">
@@ -183,10 +183,9 @@ const Contact = () => {
                 </li>
               ))}
             </ul>
-            <div className="text-center pt-5">
-              <img src="assets/svg/effect-2.svg" className="svg" alt="image" />
-              <img src="assets/svg/contact.svg" className="svg" alt="image" />
-            </div>
+            {/*<div className="effect-6">
+              <img src="assets/svg/contact.svg" className="svg" alt="image" width=""/>
+                </div>*/}
           </div>
         </div>
       </div>

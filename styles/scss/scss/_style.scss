@@ -292,7 +292,7 @@ main {
     }
 }
 
-/* feature 
+/* feature / services
 ---------------------*/
 .feature-box-01 {
     padding: 40px;
@@ -390,8 +390,8 @@ main {
         height: 50px;
         align-items: center;
         justify-content: center;
-        background: $px-theme;
-        color: $px-white;
+        background: $px-theme2;
+        color: $px-dark;
         font-size: 30px;
         display: flex;
         border-radius: 50%;
@@ -530,7 +530,8 @@ main {
     }
 }
 
-
+/* testimonial section
+---------------------*/
 .feature-box-03 {
     border: 2px solid $px-dark;
     box-shadow: 0 0 0 0 $px-dark;
@@ -578,6 +579,20 @@ main {
     }
 }
 
+/* contact section 
+-----------------*/
+.effect-6 {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    max-width: 200px;
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    .effect-4 {
+      display: none;
+    }
+  }
 
 .contact-form {
     border: 2px solid $px-dark;

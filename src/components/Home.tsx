@@ -20,8 +20,8 @@ const Home = () => {
               <h1>
                 Hi! I'm Andrea,<br />
               </h1>
-              <p style={{fontSize: 32, color:"black"}}>your friendly web developer with<br/>
-                deep design, SEO, and conversion experience.</p>
+              <p style={{fontSize: 32, color:"black"}}>a creative developer with a marketer's
+              origin story.</p>
               <p>
                 My design and development services lean on 11 years of 
                 successfully managing websites and conversion optimization

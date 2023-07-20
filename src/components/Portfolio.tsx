@@ -77,6 +77,9 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
+      {/*<div className="effect-5">
+        <img src="assets/svg/wow.svg" className="svg" alt="image"/>
+      </div>*/}
     </section>
     <section id="call-to-action" className="">
       <div className="col-lg-12 callout-section">
