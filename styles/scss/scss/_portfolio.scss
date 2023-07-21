@@ -50,3 +50,22 @@
       display: none;
     }
   }
+
+  .call-to-action{
+    //margin: 55px 0;
+    background-color: $px-bk-pink;
+    &img {
+        position: absolute;
+        object-fit: cover;
+        //bottom: 50%;
+        //right: 50%;
+        display: block;
+        z-index: 6;
+      
+      @media (max-width: 767px) {
+        img {
+          display: none;
+        }
+      }
+    }
+  }

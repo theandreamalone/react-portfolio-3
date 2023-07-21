@@ -81,17 +81,20 @@ const Portfolio = () => {
         <img src="assets/svg/wow.svg" className="svg" alt="image"/>
       </div>*/}
     </section>
-    <section id="call-to-action" className="">
-      <div className="col-lg-12 callout-section">
-            <div className="experience-user avatar-box">
-            <div className="avatar">
+    <section id="call-to-action" className="section call-to-action">
+      <div className="col-lg-12">
+        <div className="experience-user avatar-box">
+          {/* // removed avatar temporarily
+          <div className="avatar">
             <img src="./assets/img/headshot.png" alt="image" />
-            </div>
-            <a className="px-btn px-btn-theme2" href="#contactus">
-              Hire me{" "}
-            </a>
-            </div>
-          </div>
+          </div>  
+          */}
+          <img src="./assets/svg/logo.svg" alt="image" width="33%" max-width="500px"/>
+          <a className="px-btn px-btn-theme2" href="#contactus">
+            Hire me{" "}
+          </a>
+        </div>
+      </div>
     </section>
     </>
   );

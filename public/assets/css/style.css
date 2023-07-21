@@ -703,7 +703,7 @@ Primary use:
   color: #555;
 }
 .footer .nav a:hover {
-  color: #e95b1a;
+  color: #f5bfda;
 }
 .footer .nav a + a {
   margin-left: 18px;
@@ -722,13 +722,13 @@ Primary use:
   display: inline-block;
 }
 .px-btn.px-btn-theme {
-  background: #e95b1a;
-  border-color: #e95b1a;
-  color: #fff;
+  background: #f5bfda;
+  border-color: #f5bfda;
+  color: #18171C;
 }
 .px-btn.px-btn-theme:hover {
-  background: #02ac64;
-  border-color: #02ac64;
+  background: #fee200;
+  border-color: #fee200;
 }
 .px-btn.px-btn-theme2 {
   background: #fee200;
@@ -736,13 +736,13 @@ Primary use:
   color: #18171C;
 }
 .px-btn.px-btn-theme2:hover {
-  background: #02ac64;
-  border-color: #02ac64;
-  color: #fff;
+  background: #fee200;
+  border-color: #fee200;
+  color: #18171C;
 }
 
 .bg-gray {
-  background: rgba(254, 226, 0, 0.1);
+  background: #f9f3d4;
 }
 
 .background-pattern {
@@ -771,11 +771,11 @@ img {
 }
 
 a {
-  color: #e95b1a;
+  color: #f5bfda;
   text-decoration: none;
 }
 a:hover {
-  color: #c74c13;
+  color: #ef9cc6;
   text-decoration: none;
 }
 
@@ -792,7 +792,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #e95b1a;
+  background: #f5bfda;
   z-index: 99999;
 }
 
@@ -993,9 +993,9 @@ main {
 }
 .home-section .home-intro h6 span, .home-section .home-intro .h6 span {
   display: inline-block;
-  border: 1px solid #e95b1a;
+  border: 1px solid #f5bfda;
   padding: 8px 20px;
-  color: #e95b1a;
+  color: #f5bfda;
   transform: rotate(-35deg);
 }
 @media (max-width: 767px) {
@@ -1230,6 +1230,7 @@ main {
   margin-bottom: 20px;
   background-color: rgba(254, 226, 0, 0.1);
   position: relative;
+  z-index: 4;
 }
 .experience-user .avatar img {
   display: block;
@@ -1265,7 +1266,7 @@ main {
 .portfolio-box .portfolio-info a {
   width: 40px;
   height: 40px;
-  background: #e95b1a;
+  background: #f5bfda;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1397,7 +1398,7 @@ main {
   height: 55px;
   display: inline-flex;
   align-items: center;
-  background: #e95b1a;
+  background: #f5bfda;
   color: #fff;
   border-radius: 50%;
   justify-content: center;
@@ -1646,6 +1647,22 @@ main {
     display: none;
   }
 }
+.call-to-action {
+  background-color: #efd5e4;
+}
+.call-to-actionimg {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  z-index: 6;
+}
+@media (max-width: 767px) {
+  .call-to-actionimg img {
+    display: none;
+  }
+}
+
 .section-heading {
   padding-bottom: 45px;
 }

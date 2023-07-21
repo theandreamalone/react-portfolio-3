@@ -6,9 +6,9 @@ const skillsData = [
   { id: 3, name: "React JS and Native", icon: "fab fa-react" },
   { id: 4, name: "PHP", icon: "fab fa-php" },
   { id: 5, name: "Javascript and Typescript", icon: "fab fa-typescript" },
-  { id: 6, name: "DevOps", icon: "fab fa-infinity" },
-  { id: 7, name: "APIs", icon: "fab fa-android" },
-  { id: 8, name: "Docker", icon: "fab fa-android" },
+  { id: 6, name: "DevOps", icon: "fab fa-github" },
+  { id: 7, name: "APIs", icon: "fas fa-arrow-right-arrow-left" },
+  { id: 8, name: "Docker", icon: "fab linkedin-in" },
   { id: 9, name: "GitHub, VS Code, and CLI", icon: "fab fa-android" },
   { id: 10, name: "Node.js", icon: "fab fa-android" },
   { id: 11, name: "Next.js", icon: "fab fa-android" },
@@ -25,7 +25,7 @@ const experiencesData = [
   {
     id: 1,
     date: "Jan 2019 - Present (Freelance)",
-    designation: "Web Strategist and Manager",
+    designation: "Web Developer and Manager",
     company: "Red Plum WP Builder",
   },
   {

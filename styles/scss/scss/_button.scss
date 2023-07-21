@@ -12,7 +12,7 @@
 	&.px-btn-theme {
 		background: $px-theme;
 		border-color: $px-theme;
-		color: $px-white;
+		color: $px-dark;
 		&:hover {
 			background: $px-hover;
 			border-color: $px-hover;
@@ -25,7 +25,7 @@
 		&:hover {
 			background: $px-hover;
 			border-color: $px-hover;
-			color: $px-white;
+			color: $px-dark;
 		}
 	}
 }

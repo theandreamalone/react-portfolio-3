@@ -482,6 +482,7 @@ main {
         margin-bottom: 20px;
         background-color: $px-gray;
         position: relative;
+        z-index: 4;
         img {
             display: block;
             width: 120%;
