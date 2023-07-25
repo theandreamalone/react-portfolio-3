@@ -10,9 +10,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage --watch=false",
-    "add-domain": "echo andreamalone.com > dist/CNAME", 
-    "predeploy": "npm run build && npm run add-domain",
-    "deploy": "gh-pages -d dist"
+    "add-domain": "echo \"andreamalone.com\" > dist/CNAME", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages && npm run add-domain -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
