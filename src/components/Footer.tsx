@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer> // End Footer 
   );
 };
 export default Footer;
