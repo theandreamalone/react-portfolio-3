@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
+  build and predeploy:
+    name: Build and Predeploy
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Build project
-        run: npm run build
+      - name: Build and predeploy project
+        run: npm run predeploy
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
@@ -33,7 +33,7 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: build
+    needs: build and predeploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
