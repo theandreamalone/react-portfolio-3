@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage --watch=false",
-    "predeploy": "npm run build",
+    "add-domain": "echo andreamalone.com-soft.de > dist/CNAME",
+    "predeploy": "npm run build && npm run add-domain",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
