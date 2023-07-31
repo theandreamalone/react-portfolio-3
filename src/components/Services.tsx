@@ -6,7 +6,7 @@ const serviceData = [
     name: "Conversational Design",
     icon: "bi bi-phone",
     desc: "Design that engages users in a conversation. " +
-          "Service includes conceptualizing or prototyping designs with Adobe and Figma.",
+          "Service includes conceptualizing or prototyping web designs with Adobe and Figma.",
     year: "14 years of excellence",
   },
   {
@@ -43,9 +43,9 @@ const serviceData = [
   },
   {
     id: 6,
-    name: "SEO Marketing",
+    name: "Asset Design",
     icon: "bi bi-globe2",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    desc: "Design and develop graphics for websites, social media, and print. " +"Experience includes working with Adobe Creative Suite.",
   },
 ];
 const Services = () => {
