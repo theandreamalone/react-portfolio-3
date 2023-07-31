@@ -71,7 +71,7 @@ const Skill = () => {
                 heading={"Experience and Skills"}
                 subHeading={"Experience"}
                 text={
-                  "My design and development services lean on 11 years of successfully managing websites and conversion optimization for organizations big and small"
+                  "My design and development services lean on 11 years of successfully managing websites and conversion optimization for organizations big and small."
                 }
                 />
               </div>

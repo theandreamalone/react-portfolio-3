@@ -10,7 +10,7 @@ const testimonialData = [
     designation: "Executive Director",
     company: "Value Vinyls, Inc.",
     comment:
-      "Andrea took great pride in achieving company goals, and even more pride in supporting her team to achieve their own professional goals." + 
+      "Andrea took great pride in achieving company goals, and even more pride in supporting her team to achieve their own professional goals. " + 
       "Andrea enjoys a challenge, and working with her direct team or other teams within the organization to problem solve. She helped to make the marketing team more agile, and we are seeing the results of this even after her departure.",
   },
   {
@@ -40,7 +40,7 @@ const testimonialData = [
     designation: "Email Campaign Manager",
     company: "Chan Zuckerberg Initiative",
     comment:
-      "Andrea is great to work with - she shows care and close attention to her work." + 
+      "Andrea is great to work with - she shows care and close attention to her work. " + 
       "She seeks to be a strong partner in every project, demonstrates excellent emotional intelligence in every interaction with team members and stakeholders, and is happy and willing to execute the work needed to bring an idea to life. It's been a pleasure working with her!",
   },
 ];
