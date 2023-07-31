@@ -1341,7 +1341,7 @@ main {
 }
 
 @media (max-width: 767px) {
-  .effect-4 {
+  .effect-6 {
     display: none;
   }
 }
@@ -1434,7 +1434,7 @@ main {
 .effect-1 {
   position: absolute;
   top: 25%;
-  left: 2%;
+  left: 13%;
   max-width: 50px;
   width: 100%;
 }
@@ -1447,7 +1447,7 @@ main {
 .effect-2 {
   position: absolute;
   bottom: 20%;
-  right: 2%;
+  right: 13%;
   max-width: 150px;
   width: 100%;
 }
@@ -1460,13 +1460,13 @@ main {
 .effect-3 {
   position: absolute;
   top: 25%;
-  left: 4%;
+  left: 14%;
   max-width: 100px;
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .home-section .effect-2 {
+  .home-section .effect-3 {
     display: none;
   }
 }

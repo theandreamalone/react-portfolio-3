@@ -13,7 +13,7 @@ const Home = () => {
       <div className="container">
         <div className="row min-vh-100 align-items-center">
           <div className="col-lg-6 pe-xl-5 py-5">
-            <div className="home-intro one-page-nav">
+            <div className="home-intro one-page-nav text-center">
               <h6>
                 <span>Hello.</span>
               </h6>
