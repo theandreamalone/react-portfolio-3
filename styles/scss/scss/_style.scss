@@ -351,8 +351,9 @@ main {
     }
     .section-heading {
         p {
-            max-width: 500px;
+            max-width: 100%;
             margin-top: 45px;
+            width: 630px;
         }
     }
 }
