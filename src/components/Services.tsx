@@ -13,7 +13,7 @@ const serviceData = [
     id: 2,
     name: "Frontend Development",
     icon: "bi bi-laptop",
-    desc: "Clean design, development, and maintainence of front-end systems and user interfaces. " +
+    desc: "Clean design, development, and maintenance of frontend systems and user interfaces. " +
     "Experience includes working on large-scale systems and enterprise software.",
     year: "5 years of excellence",
   },
@@ -21,7 +21,7 @@ const serviceData = [
     id: 3,
     name: "Technical SEO",
     icon: "bi bi-triangle",
-    desc: "Ensures websites meets the technical requirements of modern search engines " + 
+    desc: "Ensures websites meet the technical requirements of modern search engines, " + 
     "such as improving page speed, security, crawling, indexing, rendering, and website architecture.",
     year: "5 years of excellence"
   },
@@ -29,8 +29,8 @@ const serviceData = [
     id: 4,
     name: "On Page SEO",
     icon: "bi bi-columns",
-    desc: "Throughly reviews and updates key markers such as headings and subheadings, " + 
-    "semenatic elements, schema markup, internal linking, images, and web accessability.",
+    desc: "horoughly reviews and updates key markers such as headings and subheadings, " + 
+    "semantic elements, schema markup, internal linking, images, and web accessibility.",
     year: "5 years of excellence",
   },
   {
@@ -38,14 +38,14 @@ const serviceData = [
     name: "Project Management",
     icon: "bi bi-distribute-vertical",
     desc: "Manage all website deliverables, including website strategy, sitemaps, wireframes, " + 
-    "metadata frameworks, web design, content migration plans, maintenance and updates.",
+    "metadata frameworks, web design, content migration plans, maintenance, and updates.",
     year: "8 years of excellence",
   },
   {
     id: 6,
     name: "Asset Design",
     icon: "bi bi-globe2",
-    desc: "Design and develop graphics for websites, social media, and print. " +"Experience includes working with Adobe Creative Suite.",
+    desc: "Design and develop graphics for websites, social media, and print. Experience includes working with Adobe Creative Suite.",
   },
 ];
 const Services = () => {
