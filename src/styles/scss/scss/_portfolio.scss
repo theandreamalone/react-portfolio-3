@@ -159,7 +159,7 @@ html[dir="rtl"] {
 	  cursor: pointer;
     &.active {
       &:after {
-        color: $px-link-orange;
+        color: $px-link-orange; 
         height: 2px;
         width: 100%;
         content: ' ';
@@ -170,10 +170,10 @@ html[dir="rtl"] {
         left: 0;
 		@include translateY(-3px);
       }
-      color: $px-link-orange;
+      color: $px-link-orange; 
     }
 	&:not(.active):hover {
-      color: $px-link-orange;
+      color: $px-link-orange; 
     }
   }
   &.flex-column {
@@ -204,7 +204,7 @@ html[dir="rtl"] {
           left: auto;
         }
         background-color: transparent;
-        color: $px-dark;
+        color: $px-link-orange; 
       }
     }
   }
