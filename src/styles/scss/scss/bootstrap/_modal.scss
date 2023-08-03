@@ -59,8 +59,8 @@
 
   // When fading in the modal, animate it to slide down
   .modal.fade & {
-    @include transition($modal-transition);
-    transform: $modal-fade-transform;
+    transition: (transform .3s ease-out);
+    transform: translate(0, -50px);
   }
   .modal.show & {
     transform: $modal-show-transform;
@@ -103,8 +103,8 @@
   background-color: var(--#{$prefix}modal-bg);
   background-clip: padding-box;
   border: var(--#{$prefix}modal-border-width) solid var(--#{$prefix}modal-border-color);
-  @include border-radius(var(--#{$prefix}modal-border-radius));
-  @include box-shadow(var(--#{$prefix}modal-box-shadow));
+  border-radius: (var(--#{$prefix}modal-border-radius));
+  box-shadow: (var(--#{$prefix}modal-box-shadow));
   // Remove focus outline from opened modal
   outline: 0;
 }
@@ -117,7 +117,7 @@
   --#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
   // scss-docs-end modal-backdrop-css-vars
 
-  @include overlay-backdrop(var(--#{$prefix}backdrop-zindex), var(--#{$prefix}backdrop-bg), var(--#{$prefix}backdrop-opacity));
+  $overlay-backdrop: (var(--#{$prefix}backdrop-zindex), var(--#{$prefix}backdrop-bg), var(--#{$prefix}backdrop-opacity));
 }
 
 // Modal header
@@ -129,7 +129,7 @@
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: var(--#{$prefix}modal-header-padding);
   border-bottom: var(--#{$prefix}modal-header-border-width) solid var(--#{$prefix}modal-header-border-color);
-  @include border-top-radius(var(--#{$prefix}modal-inner-border-radius));
+  $border-top-radius: (var(--#{$prefix}modal-inner-border-radius));
 
   .btn-close {
     padding: calc(var(--#{$prefix}modal-header-padding-y) * .5) calc(var(--#{$prefix}modal-header-padding-x) * .5);
@@ -163,7 +163,7 @@
   padding: calc(var(--#{$prefix}modal-padding) - var(--#{$prefix}modal-footer-gap) * .5);
   background-color: var(--#{$prefix}modal-footer-bg);
   border-top: var(--#{$prefix}modal-footer-border-width) solid var(--#{$prefix}modal-footer-border-color);
-  @include border-bottom-radius(var(--#{$prefix}modal-inner-border-radius));
+  $border-bottom-radius: (var(--#{$prefix}modal-inner-border-radius));
 
   // Place margin between footer elements
   // This solution is far from ideal because of the universal selector usage,
@@ -174,7 +174,7 @@
 }
 
 // Scale up the modal
-@include media-breakpoint-up(sm) {
+.media-breakpoint-up-sm { 
   .modal {
     --#{$prefix}modal-margin: #{$modal-dialog-margin-y-sm-up};
     --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-sm-up};
@@ -192,20 +192,20 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+media-breakpoint-up-lg {
   .modal-lg,
   .modal-xl {
     --#{$prefix}modal-width: #{$modal-lg};
   }
 }
 
-@include media-breakpoint-up(xl) {
+.media-breakpoint-up-xl {
   .modal-xl {
     --#{$prefix}modal-width: #{$modal-xl};
   }
 }
 
-// scss-docs-start modal-fullscreen-loop
+/* scss-docs-start modal-fullscreen-loop
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
   $postfix: if($infix != "", $infix + "-down", "");
@@ -235,3 +235,5 @@
   }
 }
 // scss-docs-end modal-fullscreen-loop
+
+*/

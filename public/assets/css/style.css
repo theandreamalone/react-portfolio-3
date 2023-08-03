@@ -1,10 +1,10 @@
-/* Error: Undefined mixin.
- *    ,
- * 62 |     @include transition($modal-transition);
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   src/styles/scss/scss/bootstrap/_modal.scss 62:5  @import
- *   src/styles/scss/style.scss 33:9                  root stylesheet */
+/* Error: Undefined variable.
+ *     ,
+ * 214 |     .modal-fullscreen#{$postfix} {
+ *     |                        ^^^^^^^^
+ *     '
+ *   src/styles/scss/scss/bootstrap/_modal.scss 214:24  @import
+ *   src/styles/scss/style.scss 33:9                    root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 62 \2502      @include transition($modal-transition);\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/styles/scss/scss/bootstrap/_modal.scss 62:5  @import\a   src/styles/scss/style.scss 33:9                  root stylesheet";
+  content: "Error: Undefined variable.\a     \2577 \a 214 \2502      .modal-fullscreen#{$postfix} {\a     \2502                         ^^^^^^^^\a     \2575 \a   src/styles/scss/scss/bootstrap/_modal.scss 214:24  @import\a   src/styles/scss/style.scss 33:9                    root stylesheet";
 }
