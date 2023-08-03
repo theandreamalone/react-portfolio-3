@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$px-theme:			#f5bfda !default;
+$px-theme2:			#fee200 !default;
+
+$px-dark:			#18171C !default;
+$px-hover:			#fee200 !default;
+
+$px-white:			#fff !default;
+$px-black:			#000 !default;
+
+$px-gray:			rgba($px-theme2, .10) !default;
+$px-bk-yellow:      #f9f3d4 !default;
+$px-bk-pink:        #efd5e4 !default;
+
+
+$px-font-size:		15px !default;
+$px-line-height:	1.7 !default;
+$px-font:			'Rubik', sans-serif !default;
+$px-font-blue:      #0077ba !default;
+$px-link-orange:    #e85a1a !default;
+
+$px-shadow:			0 .375rem 1.5rem 0 rgba(140,152,164,.125) !default;
+$px-shadow-sm:		0 12px 15px rgba(140,152,164,.1) !default;
+
+
+// Breakpoints
+$px-media-xsm:		567px !default;
+$px-media-sm:		767px !default;
+$px-media-md:		991px !default;
+$px-media-lg:		1200px !default;
+
+//---------- Social Icons Colors ----------//
+
+$facebook:                 #3B5998;
+$twitter:                  #00ACEE;
+$google:                   #DD4B39;
+$linkedin:                 #0E76A8;
+$youtube:                  #C4302B;
+$instagram:                #3F729B;
+$dribbble: 				   #ea4c89;
+$github: 				   #333333;
+$behance: 				   #053eff;
+$reddit:                   #C6C6C6;
+$pinterest: 			   #cc2127;
+$vk:                       #2B587A;
+$rss:                      #EE802F;
+$skype:                    #00AFF0;
+$xing:                     #126567;
+$tumblr:                   #34526F;
+$email:                    #6567A5;
+$delicious:                #205CC0;
+$stumbleupon:              #F74425;
+$digg:                     #191919;
+$blogger:                  #FC4F08;
+$flickr:                   #FF0084;
+$vimeo:                    #86C9EF;
+$yahoo:                    #720E9E;
+$appstore:                 #000;

@@ -465,6 +465,12 @@ main {
         max-width: 100%;
         width: 100px;
         transform: rotate(20deg);
+
+        @media (max-width: 767px) {
+            .eu-1 {
+              display: none;
+            }
+        }
     }
     .eu-2 {
         position: absolute;
@@ -472,6 +478,12 @@ main {
         top: -55%;
         max-width: 100%;
         width: 75px;
+
+        @media (max-width: 767px) {
+            .eu-1 {
+              display: none;
+            }
+        }
     }
     .avatar {
         width: 180px;
