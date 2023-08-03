@@ -81,39 +81,6 @@
 	background-color: $bg-light-1;
 }
 
-.ajax-container {
-position: relative;
-background: #FFF;
-margin: 20px auto;
-max-width: 1170px;
-}
-
-.project-details-modal .btn-close {
-float: right;
-}
-html[dir="rtl"] .project-details-modal .btn-close {
-float: left;
-}
-
-.mfp-close-btn-in .ajax-container {
-&.bg-dark .mfp-close, &.bg-dark-1 .mfp-close, &.bg-dark-2 .mfp-close, &.bg-dark-3 .mfp-close, &.bg-dark-4 .mfp-close {
-  color: #fff;
-  opacity: .65;
-}
-&.bg-dark-0 .mfp-close:hover, &.bg-dark-1 .mfp-close:hover, &.bg-dark-2 .mfp-close:hover, &.bg-dark-3 .mfp-close:hover, &.bg-dark-4 .mfp-close:hover {
-  opacity: 1;
-}
-}
-
-html[dir="rtl"] {
-.mfp-content {
-  text-align: right;
-}
-.mfp-close {
-  left: 0px;
-  right: auto;
-}
-}
 
 
 .effect-5 {

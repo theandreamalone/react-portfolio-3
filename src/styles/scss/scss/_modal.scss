@@ -9,38 +9,28 @@
 // Container that the modal scrolls within
 .modal {
   // scss-docs-start modal-css-vars
-  --#{$prefix}modal-zindex: #{$zindex-modal};
-  --#{$prefix}modal-width: #{$modal-md};
-  --#{$prefix}modal-padding: #{$modal-inner-padding};
-  --#{$prefix}modal-margin: #{$modal-dialog-margin};
-  --#{$prefix}modal-color: #{$modal-content-color};
-  --#{$prefix}modal-bg: #{$modal-content-bg};
-  --#{$prefix}modal-border-color: #{$modal-content-border-color};
-  --#{$prefix}modal-border-width: #{$modal-content-border-width};
-  --#{$prefix}modal-border-radius: #{$modal-content-border-radius};
-  --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
-  --#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
-  --#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
-  --#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
-  --#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
-  --#{$prefix}modal-header-border-color: #{$modal-header-border-color};
-  --#{$prefix}modal-header-border-width: #{$modal-header-border-width};
-  --#{$prefix}modal-title-line-height: #{$modal-title-line-height};
-  --#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
-  --#{$prefix}modal-footer-bg: #{$modal-footer-bg};
-  --#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
-  --#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
+  
   // scss-docs-end modal-css-vars
 
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--#{$prefix}modal-zindex);
+  z-index: 1055;
   display: none;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #212529!important;
+  transition: opacity .15s linear;
+  margin: 1rem;
+
+  @media (min-width: 576px){
+    .modal {
+    margin: 4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    }
+}
   // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
   outline: 0;
@@ -49,13 +39,153 @@
   // See also https://github.com/twbs/bootstrap/issues/17695
 }
 
+.text-6 {
+  font-size: 24px!important;
+  font-size: 1.5rem!important;
+}
+
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html:not([dir=rtl]) .social-icons li:first-child {
+  margin-left: 0;
+}
+
+.social-icons li {
+  margin: 2px 6px;
+  overflow: visible;
+  padding: 0; 
+
+  & a {
+    color: #4d555a;
+    display: block;
+    font-size: 18px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    width: 26px;
+  }
+
+  & i {
+    line-height: inherit; 
+  }
+}
+
+
+
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: var(--#{$prefix}modal-margin);
+  margin: 6.75rem auto;;
   // allow clicks to pass through for custom click handling to close modal
   pointer-events: none;
+
+
+
+.slick-list {
+  display: block;
+  position: relative;
+  transform: translateZ(0);
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.slick-slider {
+  display: block;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  user-select: none;
+  transform: translateZ(0);
+}
+
+.slick-dots {
+  margin-top: 10px;
+  position: static;
+  bottom: -25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  height: auto;
+  margin: 0;
+  width: auto;
+
+  & button {
+    -webkit-backface-visibility: visible;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: block;
+    height: 20px;
+    margin: 5px 3px;
+    position: relative;
+    transition: all .2s ease;
+    width: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    padding: 5px;
+  }
+
+
+  &.slick-active button {
+    border-color: $px-theme;
+    transition: all .5s ease;
+
+    &:before {
+      border-radius: 100%;
+      content: "";
+      height: 10px;
+      left: 50%;
+      margin-left: -5px;
+      margin-top: -5px;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      transition: all .5s ease;
+      width: 10px;
+      -webkit-font-smoothing: antialiased;
+      font-family: slick;
+      font-size: 6px;
+      line-height: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+  }
+}
 
   // When fading in the modal, animate it to slide down
   .modal.fade & {
@@ -73,7 +203,7 @@
 }
 
 .modal-dialog-scrollable {
-  height: calc(100% - var(--#{$prefix}modal-margin) * 2);
+  height: calc(100% - var(modal-margin) * 2);
 
   .modal-content {
     max-height: 100%;
@@ -86,9 +216,9 @@
 }
 
 .modal-dialog-centered {
-  display: flex;
+  display: flex; 
   align-items: center;
-  min-height: calc(100% - var(--#{$prefix}modal-margin) * 2);
+  min-height: calc(100% - var(modal-margin) * 2);
 }
 
 // Actual modal
@@ -137,6 +267,18 @@
   }
 }
 
+.btn-close {
+  background: transparent;
+  border: 0;
+  border-radius: 0.375rem;
+  box-sizing: initial;
+  color: #000;
+  height: 1em;
+  opacity: .5;
+  padding: 0.25em;
+  width: 1em;
+}
+
 // Title text within header
 .modal-title {
   margin-bottom: 0;
@@ -150,7 +292,7 @@
   // Enable `flex-grow: 1` so that the body take up as much space as possible
   // when there should be a fixed height on `.modal-dialog`.
   flex: 1 1 auto;
-  padding: var(--#{$prefix}modal-padding);
+  padding: 35px;
 }
 
 // Footer (for actions)
@@ -182,9 +324,9 @@
 
   // Automatically set modal's width for larger viewports
   .modal-dialog {
-    max-width: var(--#{$prefix}modal-width);
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 90%;
+    margin: 7.75rem;
+    ;
   }
 
   .modal-sm {
@@ -195,7 +337,7 @@
 media-breakpoint-up-lg {
   .modal-lg,
   .modal-xl {
-    --#{$prefix}modal-width: #{$modal-lg};
+    width: #{$modal-lg};
   }
 }
 
@@ -205,13 +347,9 @@ media-breakpoint-up-lg {
   }
 }
 
-/* scss-docs-start modal-fullscreen-loop
-@each $breakpoint in map-keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  $postfix: if($infix != "", $infix + "-down", "");
+// scss-docs-start modal-fullscreen-loop
 
-  @include media-breakpoint-down($breakpoint) {
-    .modal-fullscreen#{$postfix} {
+    .modal-fullscreen {
       width: 100vw;
       max-width: none;
       height: 100%;
@@ -232,8 +370,44 @@ media-breakpoint-up-lg {
         overflow-y: auto;
       }
     }
-  }
-}
+
 // scss-docs-end modal-fullscreen-loop
 
-*/
+.ajax-container {
+  position: relative;
+  background: #FFF;
+  margin: 20px auto;
+  max-width: 1170px;
+  }
+  
+  .project-details-modal .btn-close {
+  float: right;
+  }
+  html[dir="rtl"] .project-details-modal .btn-close {
+  float: left;
+  }
+  
+  .mfp-close-btn-in .ajax-container {
+  &.bg-dark .mfp-close, &.bg-dark-1 .mfp-close, &.bg-dark-2 .mfp-close, &.bg-dark-3 .mfp-close, &.bg-dark-4 .mfp-close {
+    color: #fff;
+    opacity: .65;
+  }
+  &.bg-dark-0 .mfp-close:hover, &.bg-dark-1 .mfp-close:hover, &.bg-dark-2 .mfp-close:hover, &.bg-dark-3 .mfp-close:hover, &.bg-dark-4 .mfp-close:hover {
+    opacity: 1;
+  }
+  }
+  
+  html[dir="rtl"] {
+  .mfp-content {
+    text-align: right;
+  }
+  .mfp-close {
+    left: 0px;
+    right: auto;
+  }
+  }
+  
+
+  .bg-dark-1 {
+    background-color: #212529!important;
+}
