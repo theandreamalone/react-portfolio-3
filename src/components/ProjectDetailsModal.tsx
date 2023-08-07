@@ -60,7 +60,7 @@ const ProjectDetailsModal = ({ projectDetails }: any | undefined ) => {
               >
                 <h2
                   className={
-                    "text-6 font-weight-600 text-center mb-4"
+                    "text-center mb-4"
                   }
                 >
                   {projectDetails?.title}

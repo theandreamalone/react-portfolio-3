@@ -56,6 +56,12 @@
     &:hover .portfolio-overlay {
       opacity: 1;
     }
+  
+    .portfolio-img {
+      overflow: hidden;
+      position: relative;
+    }
+
     .portfolio-img img {
     @include transition(all 0.3s ease-in-out);
     }
@@ -71,6 +77,7 @@
       margin-bottom: auto;
     }
   }
+
   .portfolio-details {
     padding: 1.5rem 0;
     text-align: center;

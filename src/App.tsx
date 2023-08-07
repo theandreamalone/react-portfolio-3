@@ -1,5 +1,3 @@
-import Contact from "../src/components/Contact.js";
-import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
 import Portfolio from "../src/components/Portfolio";
@@ -7,6 +5,8 @@ import Services from "../src/components/Services";
 import Skill from "../src/components/Skill";
 import Testimonial from "../src/components/Testimonial";
 //import ImageView from "../src/components/popup/ImageView";
+import Contact from "../src/components/Contact.js";
+import Footer from "../src/components/Footer";
 import { Fragment, useEffect, useState } from "react";
 import Preloader from "../src/components/Preloader";
 import { malone } from "./utils";

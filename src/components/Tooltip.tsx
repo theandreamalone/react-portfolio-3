@@ -1,6 +1,6 @@
 import { Tooltip as BsTooltip } from "bootstrap";
 import React, { useEffect, useRef } from "react";
-
+ 
 interface TooltipProps {
   text: string;
   placement: any;
