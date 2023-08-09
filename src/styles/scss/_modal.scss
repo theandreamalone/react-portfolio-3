@@ -1,3 +1,6 @@
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/slick-carousel/slick/slick-theme";
+
 // stylelint-disable function-disallowed-list
 
 // .modal-open      - body class for killing the scroll
@@ -176,30 +179,21 @@ img {
   vertical-align: inherit;
 }
 
-.slick-dots {
-  margin-top: 10px;
-  position: static;
-  bottom: -25px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-}
+.slick-dots{
+	position: initial;
+	margin-top: 10px;
 
-
-
-.slick-dots li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  position: relative;
-  height: auto;
-  margin: 0;
-  width: auto;
-
-  & button {
-    -webkit-backface-visibility: visible;
+	li{
+		margin:0; 
+    width:auto; 
+    height:auto;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+		
+    button {
+		-webkit-backface-visibility: visible;
     backface-visibility: visible;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -209,43 +203,40 @@ img {
     position: relative;
     transition: all .2s ease;
     width: 20px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    color: transparent;
-    cursor: pointer;
-    font-size: 0;
-    line-height: 0;
-    outline: none;
-    padding: 5px;
-  }
-
-
-  &.slick-active button {
-    border-color: $px-theme;
-    transition: all .5s ease;
-
-    &::before {
-      border-radius: 100%;
-      content: "";
-      height: 10px;
-      left: 50%;
-      margin-left: -5px;
-      margin-top: -5px;
-      opacity: 1;
-      position: absolute;
-      top: 50%;
-      transition: all .5s ease;
-      width: 10px;
-      -webkit-font-smoothing: antialiased;
-      font-family: slick;
-      font-size: 6px;
-      line-height: 20px;
-      text-align: center;
-      box-sizing: border-box;
-    }
-  }
+    margin-left: -5px;
+    margin-top: -5px;
+		  
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "" !important;
+        width: 10px;
+        height: 10px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        background-color: rgba(0,0,0,.2);
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #0000;
+        border-radius: 100%;
+        transition: all .5s ease;
+			}
+		}
+		&.slick-active button, li:hover button {
+		  border-color: $px-theme;
+		  transition:all .5s ease;
+		}
+		&.slick-active button:before, li:hover button:before{
+			background-color: $px-theme;
+			transition:all .5s ease;
+		}
+	}
 }
+
 
 .modal-dialog {
   position: relative;
