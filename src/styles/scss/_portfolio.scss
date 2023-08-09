@@ -124,20 +124,21 @@
 
 /**** filter menu ****/
 .nav-tabs {
-  border-bottom: 2px solid $px-link-orange;
+  //border-bottom: 2px solid $px-black;
   
   .nav-item .nav-link {
-	  border:0;
+	  border:2px solid $gray-600;
     background: transparent;
     position: relative;
     border-radius: 0;
-	  padding:0.6rem 1rem;
-    color: $px-dark;
+	  padding: 0.6rem 3rem;
+    margin: 0 10px;
+    color: $gray-600;
 	  white-space: nowrap !important;
 	  cursor: pointer;
+    font-size: 18px;
     &.active {
       &:after {
-        color: $px-link-orange; 
         height: 2px;
         width: 100%;
         content: ' ';
@@ -148,24 +149,23 @@
         left: 0;
 		@include translateY(-3px);
       }
-      color: $px-link-orange; 
+      color: $px-black; 
+      border: 2px solid $px-black;
     }
 	&:not(.active):hover {
-      color: $px-link-orange; 
+      color: $px-black; 
+      border: 2px solid $px-black;
     }
   }
   &.flex-column {
-    border-right: 1px solid $px-gray;
-    border-bottom: 0px;
-    padding: 1.5rem 0;
+    
     .nav-item {
       .nav-link {
-        border: 1px solid $px-gray;
-        border-right: 0px;
-        background-color: $px-gray;
-        font-size: 14px;
-        padding: 0.75rem 1rem;
-        color: $px-dark;
+        border:2px solid $gray-600;
+        padding: 0.6rem 3rem;
+        background-color: transparent;
+        font-size: 18px;
+        color: $gray-600;
       }
       &:first-of-type .nav-link {
         border-top-left-radius: 4px;
@@ -175,14 +175,18 @@
       }
       .nav-link.active {
         &:after {
-          height: 100%;
-          width: 2px;
-          background: transparent;
-          right: -1px;
-          left: auto;
+          height: 2px;
+        width: 100%;
+        content: ' ';
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
         }
         background-color: transparent;
-        color: $px-link-orange; 
+        color: $px-black; 
+        border: 2px solid $px-black;
       }
     }
   }
@@ -204,12 +208,12 @@
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-right: 10px;
-	font-size: 0.875rem;
+	font-size: 1rem;
   }
 }
 
 
-/***** optional portfolio *****
+/***** optional portfolio layout *****
 **********
 .portfolio {
   .portfolio-box {

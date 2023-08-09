@@ -10,15 +10,14 @@ import Footer from "../src/components/Footer";
 import { Fragment, useEffect, useState } from "react";
 import Preloader from "../src/components/Preloader";
 import { malone } from "./utils";
-//import styles from "../public/assets/css/style.css";
 import { Tooltip } from "./components/Tooltip";
 
-const Index = () => {
+/*const Index = () => {
   useEffect(() => {
     malone.scrollToActiveNav();
     malone.imgToSvg();
   }, []);
-}
+}*/ // this is the original code, testing below
 
 
 
@@ -26,6 +25,8 @@ function App() {
   const [count, setCount] = useState(0);
   const [loader, setLoader] = useState(true);
   useEffect(() => {
+    malone.scrollToActiveNav();
+    malone.imgToSvg();
     setTimeout(() => {
       setLoader(false);
     }, 1500);
@@ -102,7 +103,7 @@ function App() {
           >
             <i className="fa fa-chevron-up"></i>
           </span>
-        </Tooltip>
+        </Tooltip> 
       </div>
 
     </div>

@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     z-index: 11;
-    border-bottom: 2px solid $px-dark;
+    border-bottom: solid 2px #{$px-dark};
     background: $px-white;
     .navbar {
         padding: 15px 0;

@@ -1,4 +1,9 @@
+import React from "react";
+import Typewriter from "typewriter-effect";
+
+
 const Home = () => {
+
   return (
     <section id="home" className="home-section">
       <div className="effect-1">
@@ -20,8 +25,21 @@ const Home = () => {
               <h1>
                 Hi! I'm Andrea,<br />
               </h1>
-              <p style={{fontSize: 32, color:"black"}}>a creative developer with a marketer's
-              origin story.</p>
+              {/*<p style={{fontSize: 32, color:"black"}}>a creative developer with a marketer's
+              origin story.</p>*/} 
+              <div style={{fontSize: 32, color:"black"}} className="text-32 fw-600 mb-2 mb-md-3">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "your development and a creative",
+                        "superhero",
+                        "with a marketer's origin story.",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+              </div>
               <p>
                 My design and development services lean on 11 years of 
                 successfully managing websites and conversion optimization
@@ -31,7 +49,8 @@ const Home = () => {
                 <a className="px-btn px-btn-theme" href="#contactus">
                   Let’s Talk
                 </a>
-                <a className="px-btn px-btn-theme" href="#services">
+              
+                <a className="px-btn px-btn-theme " href="#services">
                   Learn More About Me
                 </a>
               </div>
