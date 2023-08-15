@@ -31,9 +31,7 @@ const Home = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        "your development and a creative",
-                        "superhero",
-                        "with a marketer's origin story.",
+                        "your development and a creative superhero with a marketer's origin story.",
                       ],
                       autoStart: true,
                       loop: true,

@@ -12898,8 +12898,8 @@ main {
 .effect-2 {
   position: absolute;
   bottom: 20%;
-  right: 13%;
-  max-width: 150px;
+  right: 8%;
+  max-width: 130px;
   width: 100%;
 }
 
@@ -14774,6 +14774,7 @@ img {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
   --bs-backdrop-opacity: 0.5;
+  position: static;
 }
 
 .modal-header {

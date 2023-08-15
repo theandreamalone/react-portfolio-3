@@ -309,6 +309,7 @@ img {
   --#{$prefix}backdrop-zindex: #{$zindex-modal-backdrop};
   --#{$prefix}backdrop-bg: #{$modal-backdrop-bg};
   --#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
+  position: static;
   // scss-docs-end modal-backdrop-css-vars
 }
 
