@@ -12,13 +12,6 @@ import Preloader from "../src/components/Preloader";
 import { malone } from "./utils";
 import { Tooltip } from "./components/Tooltip";
 
-/*const Index = () => {
-  useEffect(() => {
-    malone.scrollToActiveNav();
-    malone.imgToSvg();
-  }, []);
-}*/ // this is the original code, testing below
-
 
 
 function App() {
@@ -26,7 +19,7 @@ function App() {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
     malone.scrollToActiveNav();
-    malone.imgToSvg();
+    //malone.imgToSvg(); review this - breaks svgs
     setTimeout(() => {
       setLoader(false);
     }, 1500);

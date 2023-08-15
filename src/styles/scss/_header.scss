@@ -32,6 +32,7 @@
     }
 
     @import "../../../node_modules/bootstrap/scss/navbar";
+    @import "../../../node_modules/bootstrap/scss/mixins";
     .navbar-brand {
         margin-right: 2rem; /*changed bootstrap css from 1rem to 2rem*/
       }

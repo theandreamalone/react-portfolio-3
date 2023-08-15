@@ -236,7 +236,7 @@ main {
     }*/
     .min-vh-100 {
         padding-top: 135px;
-        padding-bottom: 50px;
+        padding-bottom: 50px; 
         @include down-md {
             padding-top: 75px;
         }
