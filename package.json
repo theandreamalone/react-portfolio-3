@@ -10,6 +10,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage --watch=false",
+    "sass-expanded": "sass --watch src/styles/scss/style.scss:public/assets/css/style.css --style expanded",
+    "sass-compressed": "sass --watch public/assets/css/style.css:public/assets/css/style.min.css --style compressed",
+    "sass": "npm run sass-expanded && npm run sass-compressed",
     "add-domain": "echo \"andreamalone.com\" > dist/CNAME",
     "predeploy": "npm run build && npm run add-domain",
     "deploy": "gh-pages -d dist"

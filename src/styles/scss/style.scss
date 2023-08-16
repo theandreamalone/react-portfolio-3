@@ -35,16 +35,16 @@ Primary use:
 //@import "../../../vendor/bootstrap/css/bootstrap.min.css";
 //@import "../../../vendor/bootstrap/icons/bootstrap-icons.css"; 
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"; 
 
 
 // 4. Include any default map overrides here 
+ 
+// 5. Include remainder of required parts 
 
-// 5. Include remainder of required parts
-
-@import "header";
-@import "footer"; 
-@import "button";
+@import "header"; 
+@import "footer";
+@import "button"; 
 @import "color";
 @import "shared";
 @import "home";
