@@ -27,15 +27,15 @@ Primary use:
 @import "mixin";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import "../../../vendor/owl-carousel/css/owl.carousel.min.css"; 
-@import "../../../vendor/magnific/magnific-popup.css";
-@import "../../../vendor/font-awesome/css/all.css";
+@import "../../../node_modules/bootstrap/scss/bootstrap"; 
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons"; // .css
+@import "../../../vendor/owl-carousel/css/owl.carousel.min"; // .css
+@import "../../../vendor/magnific/magnific-popup"; // .css
+@import "../../../vendor/font-awesome/css/all"; // .css
 //@import "../../../vendor/bootstrap/css/bootstrap.min.css";
 //@import "../../../vendor/bootstrap/icons/bootstrap-icons.css"; 
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"; 
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min"; // .css
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.min"; // .css 
 
 
 // 4. Include any default map overrides here 
