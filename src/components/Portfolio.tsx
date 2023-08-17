@@ -48,7 +48,7 @@ const Portfolio = () => {
     ],
     categories: [filters.DEV, filters.DESIGN, filters.BRAND],
     },
-  {
+  { 
     id: 2,
     title: "SimiDigi, Inc.",
     subtitle: "Web/WordPress/LMS",
@@ -294,10 +294,11 @@ const Portfolio = () => {
                         data-bs-target="#exampleModal"
                       />
                       <div className="portfolio-overlay-details">
-                        <h5 className="text-white fw-400">
+                        <h5 className="fw-400"> {/*changed text color to black, removed class text-white */}
                           {project.title}
                         </h5>
-                        <span className="text-light">{project.subtitle}</span>
+                        <span className="">{/*changed text color to black, removed class text-white */}
+                          {project.subtitle}</span>
                       </div>
                     </div>
                   </div>

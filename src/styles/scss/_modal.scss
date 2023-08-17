@@ -110,7 +110,11 @@ html:not([dir=rtl]) .social-icons li:first-child {
   // Enable `flex-grow: 1` so that the body take up as much space as possible
   // when there should be a fixed height on `.modal-dialog`.
   flex: 1 1 auto;
-  padding: var(--#{$prefix}modal-padding);
+  padding: 20px 10px;
+
+  @media (min-width: 768px) {
+    padding: var(--#{$prefix}modal-padding); 
+  }
 }
 
 // slider, slides, and slider dots
@@ -245,9 +249,14 @@ img {
   margin-right: auto;
   // allow clicks to pass through for custom click handling to close modal
   pointer-events: none;
-  max-width: 90%;
-  padding: 4rem;
+  max-width: 100%;
+  padding: 2rem;
   margin-top: 4rem;
+
+    @media (min-width: 768px) {
+      max-width: 90%;
+      padding: 4rem;
+    }
 
 
   // When fading in the modal, animate it to slide down
@@ -407,18 +416,18 @@ img {
 
 
 .modal-xl {
-  width: 90%;
+  width: 100%;
 
-  @media (min-width: 1200px) {
-    .modal-xl {
-  width: 1140px;
+  @include media-breakpoint-up(xl) {
+    .modal-xl{
+    width: 1140px;
+    }
   }
-}
 
-@media (min-width: 992px){
-    .modal-xl {
-  width: 800px;
-  }
+  @include media-breakpoint-up(lg){
+    .modal-xl{
+      width: 800px;
+    }
   }
 }
 

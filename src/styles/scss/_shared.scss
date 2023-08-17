@@ -296,7 +296,7 @@ main {
 
 /* feature / services
 ---------------------*/
-.feature-box-01 {
+.feature-box-01 { 
     padding: 40px;
     background: $px-white;
     border: 2px solid $px-dark;
@@ -471,9 +471,7 @@ main {
         transform: rotate(20deg);
 
         @media (max-width: 767px) {
-            .eu-1 {
               display: none;
-            }
         }
     }
     .eu-2 {
@@ -484,9 +482,8 @@ main {
         width: 75px;
 
         @media (max-width: 767px) {
-            .eu-1 {
               display: none;
-            }
+            
         }
     }
     .avatar {
@@ -513,7 +510,8 @@ main {
 
 /* Portfolio 
 ---------------------*/
-.portfolio-box {
+/*
+.portfolio-box { 
     border: 2px solid $px-dark;
     background: $px-white;
     box-shadow: 0 0 0 0 $px-dark;
@@ -547,6 +545,7 @@ main {
         }
     }
 }
+*/
 
 /* testimonial section
 ---------------------*/
