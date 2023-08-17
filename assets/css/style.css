@@ -45785,7 +45785,7 @@ img {
   margin-top: 10px;
 }
 .slick-dots li {
-  margin: 0;
+  margin: 0 5px;
   width: auto;
   height: auto;
   cursor: pointer;
@@ -45804,19 +45804,16 @@ img {
   position: relative;
   transition: all 0.2s ease;
   width: 20px;
-  margin-left: -5px;
-  margin-top: -5px;
 }
 .slick-dots li button:before {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 25%;
   content: "" !important;
   width: 10px;
   height: 10px;
   font-family: "slick";
   font-size: 6px;
-  line-height: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
