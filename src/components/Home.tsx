@@ -39,7 +39,7 @@ const Home = () => {
                   />
               </div>
               <p>
-                My design and development services lean on 11 years of 
+                My design and development services lean on 14 years of 
                 successfully managing websites and conversion optimization
                 for organizations big and small.
               </p>
