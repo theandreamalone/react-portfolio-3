@@ -20,7 +20,9 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@mdx-js/rollup": "^3.1.1",
     "@next/codemod": "^13.4.8",
+    "@supabase/supabase-js": "^2.110.2",
     "@types/jest": "^29.5.2",
     "@types/mime": "^3.0.1",
     "@types/mime-types": "^2.1.1",
