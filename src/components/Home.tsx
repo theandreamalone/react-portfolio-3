@@ -35,7 +35,7 @@ const Home = () => {
                   />
               </div>
               <AdaptiveBlock
-                slug="intro"
+                blockPrefix="home-intro"
                 fallback={
                   <p>My design and development services lean on 14 years of
                   successfully managing websites and conversion optimization
