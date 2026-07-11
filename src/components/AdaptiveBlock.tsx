@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../lib/supabaseClient";
 
 // Eagerly bundles every MDX file under content/blocks at build time —
 // so rendering a block never depends on a runtime file fetch.
