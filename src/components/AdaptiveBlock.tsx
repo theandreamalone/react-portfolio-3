@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabaseClient";
+import { supabase } from "../lib/supabase";
 
 // Eagerly bundles every MDX file under content/blocks at build time —
 // so rendering a block never depends on a runtime file fetch.
@@ -11,17 +11,17 @@ function getBlockComponent(slug: string) {
 }
 
 export default function AdaptiveBlock({
-  slug,
+  blockPrefix,
   audience = "recruiter",
   fallback,
-}: { slug: string; audience?: string; fallback: React.ReactNode }) {
+}: { blockPrefix: string; audience?: string; fallback: React.ReactNode }) {
   const [resolvedSlug, setResolvedSlug] = useState<string | null>(null);
 
   useEffect(() => {
     supabase
       .from("content_blocks")
       .select("block_slug")
-      .eq("section", slug)
+      .ilike("block_slug", `${blockPrefix}%`)
       .eq("status", "published")
       .contains("audience", [audience])
       .order("sort_order")
@@ -30,7 +30,7 @@ export default function AdaptiveBlock({
         if (error || !data?.length) return; // static fallback stays on screen
         setResolvedSlug(data[0].block_slug);
       });
-  }, [slug, audience]);
+  }, [blockPrefix, audience]);
 
   const Component = resolvedSlug ? getBlockComponent(resolvedSlug) : null;
   return Component ? <Component /> : <>{fallback}</>;
