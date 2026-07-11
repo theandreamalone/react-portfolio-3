@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../lib/supabaseClient";
 
 // Eagerly bundles every MDX file under content/blocks at build time —
 // so rendering a block never depends on a runtime file fetch.
@@ -26,9 +26,9 @@ export default function AdaptiveBlock({
       .contains("audience", [audience])
       .order("sort_order")
       .limit(1)
-      .then(({ data, error }) => {
-        if (error || !data?.length) return; // static fallback stays on screen
-        setResolvedSlug(data[0].block_slug);
+      .then((result: { data: { block_slug: string }[] | null; error: unknown }) => {
+        if (result.error || !result.data?.length) return; // static fallback stays on screen
+        setResolvedSlug(result.data[0].block_slug);
       });
   }, [blockPrefix, audience]);
 
