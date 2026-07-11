@@ -1,9 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
-
+import AdaptiveBlock from "./AdaptiveBlock";
 const Home = () => {
-
   return (
     <section id="home" className="home-section">
       <div className="effect-1">
@@ -25,8 +23,6 @@ const Home = () => {
               <h1>
                 Hi! I'm Andrea,<br />
               </h1>
-              {/*<p style={{fontSize: 32, color:"black"}}>a creative developer with a marketer's
-              origin story.</p>*/} 
               <div style={{fontSize: 32, color:"black"}} className="text-32 fw-600 mb-2 mb-md-3">
                   <Typewriter
                     options={{
@@ -38,11 +34,14 @@ const Home = () => {
                     }}
                   />
               </div>
-              <p>
-                My design and development services lean on 11 years of 
-                successfully managing websites and conversion optimization
-                for organizations big and small.
-              </p>
+              <AdaptiveBlock
+                slug="intro"
+                fallback={
+                  <p>My design and development services lean on 14 years of
+                  successfully managing websites and conversion optimization
+                  for organizations big and small.</p>
+                }
+              />
               <div className="btn-bar">
                 <a className="px-btn px-btn-theme" href="#contactus">
                   Let’s Talk
